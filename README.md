@@ -6,7 +6,7 @@ A simple, interactive web app that displays random user profiles with names and 
 
 ## 🚀 Live Demo
 
-> _Coming Soon_ 
+[Check out the project here](https://web-card-one.vercel.app/) 
 
 ---
 

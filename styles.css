@@ -1,0 +1,119 @@
+/* SMALL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CUSTOM VARIABLES */
+:root {
+    --main-background-color: #f1f1f1;
+    --card-background-color: #ffffff;
+    --blue-background-color: #2962ff;
+    --name-text: #333333;
+    --desc-text: #666666;
+    --name-weight: 700;
+    --font-family: "Poppins", sans-serif;
+    --desc-weight: 400;
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: var(--font-family);
+    color: #000;
+}
+
+/* STYLES FOR THE CARD */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 0.8em;
+}
+
+.card-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-card {
+    width: 60%;
+    margin: 0.7em auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#img-part {
+    background-color: var(--blue-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+#user-img {
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--main-background-color);
+}
+
+#text-part,
+.small-text {
+    background-color: var(--card-background-color);
+    text-align: center;
+}
+
+#text {
+    font-size: 1.3rem;
+    color: var(--name-text);
+    font-weight: var(--name-weight);
+    padding: 1em;
+}
+
+.small-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-text p {
+	margin-top: 0;
+    width: 40%;
+    color: var(--desc-text);
+    font-weight: var(--desc-weight);
+    padding: 0.7em;
+}
+
+/* STYLES FOR THE NAVIGATION BUTTONS OF THE CARD */
+#left, #right {
+	background-color: var(--blue-background-color);
+	color: var(--card-background-color);
+	width: 4em;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	height: 3em;
+	transition: all ease-in 0.3s;
+}
+
+#left:hover, #right:hover {
+	transform: scale(1.5);
+}
+
+/* RESPONSIVE STYLING */
+/* FOR REALLY SMALL SCREENS */
+@media (max-width: 420px) {
+	.small-text p {
+		width: 60%;
+	}
+}
